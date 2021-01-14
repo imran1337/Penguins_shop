@@ -12,7 +12,7 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <style>
         header{
             background: #FFFBF0;
@@ -36,6 +36,7 @@
         }
         .btn_background_color{
             background-color: #A4BC46;
+            color: #fff;
             outline: none;
             border: none;
             padding: 8px;
@@ -70,13 +71,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
+                <a class="nav-link" href="#product">Product</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">AboutUs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact_us">Contact</a>
               </li>
             </ul>
           </div>
@@ -91,7 +92,7 @@
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <button class="btn_background_color"><i class="fas fa-car"></i></i> BUY NOW</button>
+            <button class="btn_background_color"><i class="fas fa-store"></i> BUY NOW</button>
           </div>
           <div class="col-6">
             <img
@@ -103,7 +104,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main id="product">
       <!--women jacket section -->
       <section class="container marginY">
         <h2 class="mb-4" style="color: #363958">WoMan Jacket</h2>
@@ -128,7 +129,7 @@
                 class="card-footer d-flex justify-content-between align-items-center"
               >
                 <h3 class="color_yellow">&dollar;234</h3>
-                <button class="btn_background_color"><i class="fas fa-car"></i></i> BUY NOW</button>
+                <button class="btn_background_color"><i class="fas fa-store"></i> BUY NOW</button>
               </div>
             </div>
           </div>
@@ -154,7 +155,7 @@
                 class="card-footer d-flex justify-content-between align-items-center"
               >
                 <h3 class="color_yellow">&dollar;234</h3>
-                <button class="btn_background_color"><i class="fas fa-car"></i></i> BUY NOW</button>
+                <button class="btn_background_color"><i class="fas fa-store"></i> BUY NOW</button>
               </div>
             </div>
           </div>
@@ -178,7 +179,7 @@
                 class="card-footer d-flex justify-content-between align-items-center"
               >
                 <h3 class="color_yellow">&dollar;234</h3>
-                <button class="btn_background_color"><i class="fas fa-car"></i></i> BUY NOW</button>
+                <button class="btn_background_color"><i class="fas fa-store"></i> BUY NOW</button>
               </div>
             </div>
           </div>
@@ -208,7 +209,7 @@
                 class="card-footer d-flex justify-content-between align-items-center"
               >
                 <h3 class="color_yellow">&dollar;234</h3>
-                <button class="btn_background_color"><i class="fas fa-car"></i></i> BUY NOW</button>
+                <button class="btn_background_color"><i class="fas fa-store"></i> BUY NOW</button>
               </div>
             </div>
           </div>
@@ -234,7 +235,7 @@
                 class="card-footer d-flex justify-content-between align-items-center"
               >
                 <h3 class="color_yellow">&dollar;234</h3>
-                <button class="btn_background_color"><i class="fas fa-car"></i></i> BUY NOW</button>
+                <button class="btn_background_color"><i class="fas fa-store"></i> BUY NOW</button>
               </div>
             </div>
           </div>
@@ -258,7 +259,7 @@
                 class="card-footer d-flex justify-content-between align-items-center"
               >
                 <h3 class="color_yellow">&dollar;234</h3>
-                <button class="btn_background_color"><i class="fas fa-car"></i></i> BUY NOW</button>
+                <button class="btn_background_color"><i class="fas fa-store"></i> BUY NOW</button>
               </div>
             </div>
           </div>
@@ -314,11 +315,49 @@
           </div>
         </div>
       </section>
-     
+     <!-- contact_us -->
+     <section id="contact_us">
+        <div class="header">
+            <h1 style="font-weight: normal;
+            font-size: 4em;
+            font-family: 'Raleway', sans-serif;
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 500px;
+            color: #F90;
+            text-align: center;">Contact us</h1>
+        </div>
+        
+        <div id="form">
+        
+        <div class="fish" id="fish"></div>
+        <div class="fish" id="fish2"></div>
+        
+        <form id="waterform" method="post">
+        
+        <div class="formgroup" id="name-form">
+            <label for="name">Your name*</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        
+        <div class="formgroup" id="email-form">
+            <label for="email">Your e-mail*</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        
+        <div class="formgroup" id="message-form">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        
+            <input class="mb-5" type="submit" value="Send your message!" />
+        </form>
+        </div>
+     </section>
     </main>
     <footer>
         <p class="text-secondary text-center mt-4">
-            &copy; Imran Khan 2021 
+            &copy; Imran Khan 2021</i>
         </p>
     </footer>
 
@@ -328,6 +367,9 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/05b2f9dc2e.js" crossorigin="anonymous"></script>
+    <!-- contact script -->
+    <script src="./js/contact.js"></script>
   </body>
 </html>
